@@ -5,3 +5,6 @@ function gotoSection(sectionName) {
   }
   //dev
   //   gotoSection(".earth");
+
+  //add waves to transitions at some stage: https://materializecss.com/waves.html#!
+  

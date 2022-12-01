@@ -32,7 +32,7 @@ h4{
     font-family: 'Open Sans', sans-serif;
     color: col.$error;
     text-align:left;
-    font-size: 10px;
+    font-size: 0.8rem;
     font-weight: 400;
 }
 
@@ -46,6 +46,7 @@ h5{
 }
 
 h6{
+    // radial prompts
     font-family: 'Open Sans', sans-serif;
     color: col.$black;
     text-align:left;

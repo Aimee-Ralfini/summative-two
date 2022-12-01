@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kiakoura Accommodation</title>
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+    // include plugin after Litepicker
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/plugins/mobilefriendly.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +31,13 @@
         <div class="dates-content">
           <h2>How long would you like to stay?</h2>
           <div class="calendar-card">
-            <div class="dates-select"></div>
+            <div class="dates-select">
+              <input
+                id="litepicker"
+                type="text"
+                placeholder="Choose your dates"
+              />
+            </div>
             <div class="people">
               <p>How many people?</p>
               <div class="counter"></div>
@@ -87,5 +97,6 @@
     </div>
     <footer></footer>
     <script src="./js/sections.js"></script>
+    <script src="./js/calendar.js"></script>
   </body>
 </html>

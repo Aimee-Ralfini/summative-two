@@ -22,7 +22,7 @@
     }
 
     .calendar-card{
-        background-color: rgba(255, 255, 255, 0.7);
+        // background-color: rgba(255, 255, 255, 0.7);
         position: absolute;
         display:flex;
         flex-direction: column;
@@ -34,9 +34,24 @@
 
 
         .dates-select{
+            // padding:10px;
             height:80%;
-            // background-color: col.$yellow;
+    
+            
+            #litepicker{
+            text-align: center;
+            border: none;
+            }
+
+           input{
+        //    background-color: col.$error;
+        height: 100%;
+        width: 100%;          
+        background-image: url("../assets/images/calendar-placeholder.png");      
+            }
         }
+
+
 
         .people{
             display:flex;
