@@ -1,0 +1,58 @@
+@use "../base/colors" as col;
+@use "../base/typography" as t;
+@use "../abstracts/variables" as vars;
+
+.confirm-content{
+    display: flex;
+    flex-direction: column;
+    background-color: col.$shell;
+    min-width: 400px;
+
+    h2{
+    position: absolute;
+    top: 10%;
+    left:22%;
+    }
+
+    button{
+    top:55%;
+    left:57%;
+    }
+
+            .motel-card{
+                background-color: rgba(255, 255, 255, 0.7);
+                position: absolute;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 358px;
+                height: 312px;
+                align-self: center;
+                top: 110px;
+
+
+                .motel-details{
+                    height:80%;
+                    // background-color: col.$yellow;
+                }
+
+                .services-radials{
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    background-color: col.$lightGrey;
+                    padding: 8px;
+                    padding-right:20px;
+                } 
+
+            } // end of MOTEL card
+
+            .cost{
+                background-color: col.$white;
+                height: 100px;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            
+            }
+} //end of CONFIRM content

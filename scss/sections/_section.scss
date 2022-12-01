@@ -1,0 +1,56 @@
+@use "../base/colors" as col;
+@use "../base/typography" as t;
+@use "../abstracts/variables" as vars;
+
+
+.app-wrapper{
+    background-color: col.$yellow;
+    margin:0 auto;
+    width: 400px;
+    height: 730px;
+    overflow-x: hidden; 
+        //– unhide overflow-x to display working app.
+    display: flex;
+
+
+    .landing{
+            position: relative;  
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+    }
+
+    .dates{
+        position: relative;  
+        // align-items: center;
+    }
+
+    .accom {
+        position: relative;  
+     }
+
+    .confirm{
+        position: relative;  
+    }
+
+    .pay{
+        position: relative;  
+    }
+
+ 
+} //app wrapper ends
+
+.landing-content {
+
+  h1{
+    position: absolute;  
+    top: 15%;
+    line-height: 3.3rem;
+    }   
+
+    button{
+        top:30%;
+        left: 30%;
+    }
+
+}
+

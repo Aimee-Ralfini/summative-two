@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiakoura Accommodation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neuton:wght@700&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header></header>
+    <div class="app-wrapper">
+      <section class="app-section landing">
+        <div class="landing-content">
+          <h1>Welcome to Kaikoura</h1>
+          <button onclick="gotoSection('.dates')"><h2>Enter</h2></button>
+        </div>
+        <img src="./assets/background-images/slide-1.jpg" alt="slide-1" />
+      </section>
+      <section class="app-section dates">
+        <div class="dates-content">
+          <h2>How long would you like to stay?</h2>
+          <div class="calendar-card">
+            <div class="dates-select"></div>
+            <div class="people">
+              <p>How many people?</p>
+              <div class="counter"></div>
+            </div>
+          </div>
+          <button onclick="gotoSection('.accom')"><h3>Search</h3></button>
+        </div>
+        <img src="./assets/background-images/slide-2.jpg" alt="slide-2" />
+      </section>
+      <section class="app-section accom">
+        <div class="accom-content">
+          <h2>Select your accommodation</h2>
+          <div class="gallery-card">
+            <div class="accom-card"></div>
+            <div class="accom-radial">
+              <h6>Select_</h6>
+              <input type="radio" />
+            </div>
+          </div>
+          <button onclick="gotoSection('.confirm')"><h3>Submit</h3></button>
+        </div>
+        <img src="./assets/background-images/slide-3.jpg" alt="slide-3" />
+      </section>
+      <section class="app-section confirm">
+        <div class="confirm-content">
+          <h2>Confirm your selection</h2>
+          <div class="motel-card">
+            <div class="motel-details"></div>
+            <div class="services-radials">
+              <p>Additional Services <br /></p>
+              <h6>Breakfast_</h6>
+              <input type="radio" />
+              <h6>Lunch_</h6>
+              <input type="radio" />
+              <h6>Dinner_</h6>
+              <input type="radio" />
+            </div>
+            <div class="cost">
+              <h6>
+                <br />
+                List items; & cost. Running total NZ$
+              </h6>
+            </div>
+          </div>
+          <button onclick="gotoSection('.pay')"><h3>Confirm</h3></button>
+        </div>
+        <img src="./assets/background-images/slide-4.jpg" alt="slide-4" />
+      </section>
+      <section class="app-section pay">
+        <div class="pay-content">
+          <h2>Payment details</h2>
+          <div class="payment-form"></div>
+          <button onclick="gotoSection('.landing')"><h3>Pay</h3></button>
+        </div>
+        <img src="./assets/background-images/slide-5.jpg" alt="slide-5" />
+      </section>
+    </div>
+    <footer></footer>
+    <script src="./js/sections.js"></script>
+  </body>
+</html>

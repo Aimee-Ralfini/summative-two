@@ -1,0 +1,38 @@
+@use "../base/colors" as col;
+@use "../base/typography" as t;
+@use "../abstracts/variables" as vars;
+
+.pay-content{
+    display: flex;
+    flex-direction: column;
+    background-color: col.$shell;
+    min-width: 400px;
+
+    h2{
+    position: absolute;
+    top: 10%;
+    left:32%;
+    color: white;
+    }
+
+    button{
+    top:55%;
+    left:57%;
+    }
+
+            .payment-form{
+                background-color: rgba(255, 255, 255, 0.7);
+                position: absolute;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 358px;
+                height: 312px;
+                align-self: center;
+                top: 110px;
+
+
+
+            } // end of PAYMENT form
+   
+} //end of PAY content

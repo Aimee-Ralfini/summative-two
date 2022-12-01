@@ -1,0 +1,22 @@
+@use "../base/colors" as col;
+@use "../base/typography" as t;
+// @use "../abstracts/variables" as vars;
+
+
+// page currently not working
+
+button {
+    position: absolute;     
+    margin-top:40px;
+    background-color: col.$yellow;
+    width: 153px;
+    height: 39px;
+    border: 1px solid col.$yellow;
+    border-radius: 25px;     
+    // left: 30%; //to be adjusted for each page
+    }
+           
+   button:hover{
+   background-color: col.$white;
+   border: 1px solid col.$white;
+   }

@@ -1,0 +1,71 @@
+@use "./colors" as col;
+
+h1{
+    //landing page only
+    font-family: 'Neuton', serif;
+    color: col.$white;
+    text-align:center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2{
+    // sub heading
+    font-family: 'Open Sans', sans-serif;
+    color: col.$navy;
+    text-align:center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h3{
+    // button text
+    font-family: 'Open Sans', sans-serif;
+    color: col.$navy;
+    text-align:center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h4{
+    // error message
+    font-family: 'Open Sans', sans-serif;
+    color: col.$error;
+    text-align:left;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+h5{
+    //para bold
+    font-family: 'Open Sans', sans-serif;
+    color: col.$black;
+    text-align:left;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+h6{
+    font-family: 'Open Sans', sans-serif;
+    color: col.$black;
+    text-align:left;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: col.$black;
+    text-align:left;
+    font-size: 1rem;
+    font-weight: 400;
+} 
+
+span{
+     // form field default
+     font-family: 'Open Sans', sans-serif;
+     color: col.$grey;
+     text-align:left;
+     font-size: 14px;
+     font-weight: 300;
+}
