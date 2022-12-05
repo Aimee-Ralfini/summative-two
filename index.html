@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kiakoura Accommodation</title>
     <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
-    // include plugin after Litepicker
+    <!-- include plugin after Litepicker -->
     <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/plugins/mobilefriendly.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,7 +31,7 @@
         <div class="dates-content">
           <h2>How long would you like to stay?</h2>
           <div class="calendar-card">
-            <div class="dates-select">
+            <div class="Litepicker">
               <input
                 id="litepicker"
                 type="text"
@@ -40,7 +40,11 @@
             </div>
             <div class="people">
               <p>How many people?</p>
-              <div class="counter"></div>
+              <div class="counter">
+                <button class="up-counter">+</button>
+                <span class="view-counter">1</span>
+                <button class="down-counter">–</button>
+              </div>
             </div>
           </div>
           <button onclick="gotoSection('.accom')"><h3>Search</h3></button>

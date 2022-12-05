@@ -20,3 +20,29 @@ button {
    background-color: col.$white;
    border: 1px solid col.$white;
    }
+
+   button.down-counter {
+    position: absolute;
+    margin:0 auto;
+    background-color: col.$yellow;
+    border: col.$yellow;
+    border-radius:10px;  
+    font-weight: 600;
+    width:15px;
+    height:15px;
+    left: 10%;
+    top: 7px;
+    }
+
+    button.up-counter{
+    position: absolute;
+    margin:0 auto;
+    background-color: col.$yellow;
+    border: col.$yellow;
+    border-radius:10px;  
+    font-weight: 600;
+    width:15px;
+    height:15px;
+    left: 80%;
+    top: 7px;
+    }

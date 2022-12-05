@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <style>
+      .counter-widget {
+        border: 1px solid black;
+        display: inline-grid;
+        grid-auto-flow: column;
+        gap: 1rem;
+        padding: 1rem 2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="counter-widget">
+      <button class="up-counter">Up</button>
+
+      <span class="view-counter">1</span>
+
+      <button class="down-counter">Down</button>
+    </div>
+
+    <script>
+      var counter = 1;
+
+      var upCounterElement = document.querySelector(".up-counter");
+
+      var downCounterElement = document.querySelector(".down-counter");
+
+      var viewCounterElement = document.querySelector(".view-counter");
+
+      viewCounterElement.innerText = counter;
+
+      upCounterElement.addEventListener("click", function () {
+        counter = counter + 1;
+
+        viewCounterElement.innerText = counter;
+      });
+
+      downCounterElement.addEventListener("click", function () {
+        counter = counter - 1;
+
+        if (counter < 1) {
+          counter = 1;
+        }
+
+        viewCounterElement.innerText = counter;
+      });
+    </script>
+  </body>
+</html>
