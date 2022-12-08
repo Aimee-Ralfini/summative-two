@@ -84,18 +84,34 @@ button {
 
      
         .people {
-      
-            display:flex;
+            display: flex;
+            flex-direction: row;
+            // flex-wrap: wrap;
+            justify-content: space-evenly;
             margin-top:230px;
             background-color: col.$shell;
             align-items: center;  
 
-            .numbers ul li {
-            
+            ul{
                 display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                padding: 0.5rem;
+            }
+
+            
+            .numbers li{
+                display: flex;
+                flex-direction: row;
                 justify-content: space-evenly;
                 list-style: none;
-          
+                margin:0;
+
+                h6{
+                    padding:5px;
+                    margin-right:5px;
+                }
+
               }
             // margin: 0;
             

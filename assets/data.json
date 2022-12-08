@@ -1,0 +1,171 @@
+{
+    "accomodation": [
+      {
+        "title": "A House In The Sun",
+        "type":"House",
+        "path": "./assets/accom/3-plus-01.jpg",
+        "beds": "1 / 2 / 3+",
+        "min-stay":"2",
+        "max-stay":"15",
+        "price": "240.00",
+        "isbn": "9781760877453",
+        "description": "Suitable for 1-4 people. min 2 - max 15 nights. Price in NZ$ per night."
+      },
+      {
+        "title": "Once Was Modern",
+        "type":"House",
+        "path": "./assets/accom/3-plus-02.jpg",
+        "beds": "1 / 2 / 3+",
+        "min-stay":"2",
+        "max-stay":"15",
+        "price": "240.00",
+        "isbn": "9781760877453",
+        "description": "Suitable for 1-4 people. min 2 - max 15 nights. Price in NZ$ per night."
+      },
+      {
+        "title": "Heritage Green",
+        "type":"House",
+        "path": "./assets/accom/3-plus-03.jpg",
+        "beds": "1 / 2 / 3+",
+        "min-stay":"2",
+        "max-stay":"15",
+        "price": "240.00",
+        "isbn": "9781760877453",
+        "description": "Suitable for 1-4 people. min 2 - max 15 nights. Price in NZ$ per night."
+      },
+      {
+        "title": "Classic Kiwi Batch",
+        "type":"House",
+        "path": "./assets/accom/3-plus-04.jpg",
+        "beds": "1 / 2 / 3+",
+        "min-stay":"2",
+        "max-stay":"15",
+        "price": "240.00",
+        "isbn": "9781760877453",
+        "description": "Suitable for 1-4 people. min 2 - max 15 nights. Price in NZ$ per night."
+      },
+        {
+        "title": "Go Bush",
+        "type":"House",
+        "path": "./assets/accom/3-plus-05.jpg",
+        "beds": "1 / 2 / 3+",
+        "min-stay":"2",
+        "max-stay":"15",
+        "price": "240.00",
+        "isbn": "9781760877453",
+        "description": "Suitable for 1-4 people. min 2 - max 15 nights. Price in NZ$ per night."
+        },
+        {
+        "title":  "Many Beds, One Carpet",
+        "type":"Hotel",
+        "path": "./assets/accom/family-01.jpg",
+        "beds": "1 / 2 / 3+",
+        "min-stay":"2",
+        "max-stay":"15",
+        "price": "240.00",
+        "isbn": "9781760877453",
+        "description": "Suitable for 1-4 people or a family. min 2 - max 15 nights. Price in NZ$ per night."
+        },
+        {
+        "title": "The Honey Bee Suite",
+        "type":"Motel",
+        "path": "./assets/accom/dbl-01.jpg",
+        "beds": "1 / 2",
+        "min-stay": "1",
+        "max-stay": "5",
+        "price": "157.00",
+        "isbn": "9781760877453",
+        "description": "Suitable for 1-2 people. Up to 5 nights. Price in NZ$ per night."
+        },
+        {
+        "title": "Tangerine Dream",
+        "type":"Motel",
+        "path": "./assets/accom/dbl-02.jpg",
+        "beds": "1 / 2",
+        "min-stay": "1",
+        "max-stay": "5",
+        "price": "157.00",
+        "isbn": "9781760877453",
+        "description": "Suitable for 1-2 people. Up to 5 nights. Price in NZ$ per night."
+        },
+        {
+        "title": "Peach Pit",
+        "type":"Motel",
+        "path": "./assets/accom/dbl-03.jpg",
+        "beds": "1 / 2",
+        "min-stay": "1",
+        "max-stay": "5",
+        "price": "157.00",
+        "isbn": "9781760877453",
+        "description": "Suitable for 1-2 people. Up to 5 nights. Price in NZ$ per night."
+        },
+        {
+        "title": "Sea View",
+        "type":"Motel",
+        "path": "./assets/accom/dbl-04.jpg",
+        "beds": "1 / 2",
+        "min-stay": "1",
+        "max-stay": "5",
+        "price": "157.00",
+        "isbn": "9781760877453",
+        "description": "Suitable for 1-2 people. Up to 5 nights. Price in NZ$ per night."
+        },
+        {
+        "title": "Everything Included",
+        "type":"Hostel",
+        "path": "./assets/accom/studio-01.jpg",
+        "beds": "1 / 2",
+        "min-stay": "1",
+        "max-stay": "10",
+        "price": "30.00",
+        "isbn": "9781760877453",
+        "description": "Suitable for 1-2 people. Up to 10 nights. Price in NZ$ per night."
+        },
+        {
+        "title": "The Rimu Suite",
+        "type":"Hostel",
+        "path": "./assets/accom/studio-02.jpg",
+        "beds": "1 / 2",
+        "min-stay": "1",
+        "max-stay": "10",
+        "price": "30.00",
+        "isbn": "9781760877453",
+        "description": "Suitable for 1-2 people. Up to 10 nights. Price in NZ$ per night."
+        },
+        {
+        "title": "Aquamarine Scene",
+        "type":"Hostel",
+        "path": "./assets/accom/studio-03.jpg",
+        "beds": "1 / 2",
+        "min-stay": "1",
+        "max-stay": "10",
+        "price": "30.00",
+        "isbn": "9781760877453",
+        "description": "Suitable for 1-2 people. Up to 10 nights. Price in NZ$ per night."
+        },
+        {
+        "title": "The Sunroom",
+        "type":"Hostel",
+        "path": "./assets/accom/studio-04.jpg",
+        "beds": "1 / 2",
+        "min-stay": "1",
+        "max-stay": "10",
+        "price": "30.00",
+        "isbn": "9781760877453",
+        "description": "Suitable for 1-2 people. Up to 10 nights. Price in NZ$ per night."
+        },
+        {
+        "title": "Spunky Bunky",
+        "type":"Hostel",
+        "path": "./assets/accom/studio-05.jpg",
+        "beds": "1 / 2",
+        "min-stay": "1",
+        "max-stay": "10",
+        "price": "30.00",
+        "isbn": "9781760877453",
+        "description": "Suitable for 1-2 people. Up to 10 nights. Price in NZ$ per night."
+        }
+        
+    ]
+  }
+  

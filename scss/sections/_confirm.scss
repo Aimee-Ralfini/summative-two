@@ -38,21 +38,50 @@
 
                 .services-radials{
                     display:flex;
-                    flex-direction: row;
+                    flex-direction:column;
                     justify-content: space-evenly;
-                    background-color: col.$lightGrey;
+                    background-color: col.$shell;
                     padding: 8px;
-                    padding-right:20px;
+                    height:auto;
+                   
                 } 
+
+                .services-radials > div{
+                    display:flex;
+                    flex-direction:row;
+                    justify-content: space-between;
+                    gap: 5px;
+                }
+
+                // .services-radials p{
+                //     margin-right: 14px;
+                // }
+
+// #AddOnText{
+//     color: col.$error;
+// }
 
             } // end of MOTEL card
 
-            .cost{
-                background-color: col.$white;
-                height: 100px;
+            .bill{
+                // background-color: col.$white;
                 display:flex;
-                flex-direction: row;
-                justify-content: space-evenly;
+                flex-direction: column;
+                justify-content: space-between;   
+                padding:8px;
+                height: 200px;   
+                background-color: col.$white;
+                // list-style-type: none;
             
+                .breakdown{
+                    display:grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    gap: 0.5rem;
+                    padding-top: 10px;
+                }
+
+                .total-bill{
+                    padding-top:8px;
+                }
             }
 } //end of CONFIRM content

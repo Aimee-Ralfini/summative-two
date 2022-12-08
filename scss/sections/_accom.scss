@@ -31,19 +31,59 @@
                 top: 110px;
 
 
-                .accom-card{
-                    height:80%;
-                    // background-color: col.$yellow;
+                .accom-card img{
+                    width: 100%;
+                    position: relative;
+                    // padding: 0 10px;
+                    z-index: -1;
                 }
 
-                .accom-radial{
+                .motel{
+                 animation-delay: 10s;
+                 z-index:20;
+                /* keyframe-animation creation */
+                }
+
+
+                button.splide__arrow--next {
+                    position:absolute;
+                    top:30%;
+                    left:96%;
                     display:flex;
                     flex-direction: row;
-                    justify-content: flex-end;
-                    background-color: col.$lightGrey;
-                    padding: 8px;
-                    padding-right:20px;
-                } 
+                    height:2em;
+                    width: 2em;
+                }
 
-            } // end of GALLERY card
-} //end of ACCOM content
+                button.splide__arrow--prev {
+                    position:absolute;
+                    top:30%;
+                    left:-4%;
+                    display:flex;
+                    flex-direction: row;
+                    height:2em;
+                    width: 2em;
+                    }
+            
+            
+
+               input{
+                align-items: center;
+                margin-top: 5px;
+
+            //    .my-check{
+            //        margin-top: 15px;
+            //     } Not working
+               } 
+
+              .splide__pagination {
+                margin-top: 35px;
+
+                li{
+                    display:none;
+                }
+               }
+      
+    } 
+}
+//end of ACCOM content

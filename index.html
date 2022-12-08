@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kiakoura Accommodation</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
     <!-- include plugin after Litepicker -->
     <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/plugins/mobilefriendly.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,13 +45,27 @@
               />
             </div>
             <div class="people">
-              <p>How many people?</p>
-              <div class="counter">
+              <h5>Number of people?</h5>
+              <ul class="numbers">
+                <li>
+                  <input type="radio" name="user-choice" value="1" />
+                  <h6>1</h6>
+                </li>
+                <li>
+                  <input type="radio" name="user-choice" value="2" />
+                  <h6>2</h6>
+                </li>
+                <li>
+                  <input type="radio" name="user-choice" value="3+" />
+                  <h6>3+</h6>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="counter">
                 <button class="up-counter">+</button>
                 <span class="view-counter">1</span>
                 <button class="down-counter">–</button>
-              </div>
-            </div>
+              </div> -->
           </div>
           <button onclick="gotoSection('.accom')"><h3>Search</h3></button>
         </div>
@@ -55,13 +75,310 @@
         <div class="accom-content">
           <h2>Select your accommodation</h2>
           <div class="gallery-card">
-            <div class="accom-card"></div>
-            <div class="accom-radial">
-              <h6>Select_</h6>
-              <input type="radio" />
+            <div class="accom-card">
+              <h4 class="motel"></h4>
+              <div class="my-slider splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li data-type="threePlus" class="splide__slide">
+                      <img src="./assets/accom/3-plus-01.jpg" alt="group" />
+                      <h5 style="margin-left: 10px; margin-top: 5px">
+                        A House In The Sun
+                      </h5>
+                      <p style="margin-left: 10px">
+                        Suitable for 1-4 people. min 2 - max 15 nights.
+                      </p>
+
+                      <h6 style="margin-left: 10px">
+                        Batch $240/night. Select
+                        <input
+                          class="my-check"
+                          type="checkbox"
+                          id="myCheck"
+                          onclick="myFunction()"
+                        />
+                      </h6>
+                      <h6 id="text" style="display: none">Booked!</h6>
+                    </li>
+                    <li data-type="threePlus" class="splide__slide">
+                      <img src="./assets/accom/3-plus-02.jpg" alt="group" />
+                      <h5 style="margin-left: 10px; margin-top: 5px">
+                        Once Was Modern
+                      </h5>
+                      <p style="margin-left: 10px">
+                        Suitable for 1-4 people. min 2 - max 15 nights.
+                      </p>
+                      <h6 style="margin-left: 10px">
+                        Batch $240/night. Select
+                        <input
+                          class="my-check"
+                          type="checkbox"
+                          id="myCheck"
+                          onclick="myFunction()"
+                        />
+                      </h6>
+                      <h6 id="text" style="display: none">Booked!</h6>
+                    </li>
+                    <li data-type="threePlus" class="splide__slide">
+                      <img src="./assets/accom/3-plus-03.jpg" alt="group" />
+                      <h5 style="margin-left: 10px; margin-top: 5px">
+                        Heritage Green
+                      </h5>
+                      <p style="margin-left: 10px">
+                        Suitable for 1-4 people. min 2 - max 15 nights.
+                      </p>
+                      <h6 style="margin-left: 10px">
+                        Batch $240/night. Select
+                        <input
+                          class="my-check"
+                          type="checkbox"
+                          id="myCheck"
+                          onclick="myFunction()"
+                        />
+                      </h6>
+                      <h6 id="text" style="display: none">Booked!</h6>
+                    </li>
+                    <li data-type="threePlus" class="splide__slide">
+                      <img src="./assets/accom/3-plus-04.jpg" alt="group" />
+                      <h5 style="margin-left: 10px; margin-top: 5px">
+                        Classic Kiwi
+                      </h5>
+                      <p style="margin-left: 10px">
+                        Suitable for 1-4 people. min 2 - max 15 nights.
+                      </p>
+                      <h6 style="margin-left: 10px">
+                        Batch $240/night. Select
+                        <input
+                          class="my-check"
+                          type="checkbox"
+                          id="myCheck"
+                          onclick="myFunction()"
+                        />
+                      </h6>
+                      <h6 id="text" style="display: none">Booked!</h6>
+                    </li>
+                    <li data-type="threePlus" class="splide__slide">
+                      <img src="./assets/accom/3-plus-05.jpg" alt="group" />
+                      <h5 style="margin-left: 10px; margin-top: 5px">
+                        Go Bush
+                      </h5>
+                      <p style="margin-left: 10px">
+                        Suitable for 1-4 people. min 2 - max 15 nights.
+                      </p>
+                      <h6 style="margin-left: 10px">
+                        Batch $240/night. Select
+                        <input
+                          class="my-check"
+                          type="checkbox"
+                          id="myCheck"
+                          onclick="myFunction()"
+                        />
+                      </h6>
+                      <h6 id="text" style="display: none">Booked!</h6>
+                    </li>
+                    <li data-type="threePlus" class="splide__slide">
+                      <img src="./assets/accom/family-01.jpg" alt="family" />
+                      <h5 style="margin-left: 10px; margin-top: 5px">
+                        Many Beds, One Carpet
+                      </h5>
+                      <p style="margin-left: 10px">
+                        Suitable for 1-2 people. Up to 5 nights.
+                      </p>
+                      <h6 style="margin-left: 10px">
+                        Hotel $157/night. Select
+                        <input
+                          class="my-check"
+                          type="checkbox"
+                          id="myCheck"
+                          onclick="myFunction()"
+                        />
+                      </h6>
+                      <h6 id="text" style="display: none">Booked!</h6>
+                    </li>
+                    <li data-type="two" class="splide__slide">
+                      <img src="./assets/accom/dbl-01.jpg" alt="dbl bdrm" />
+                      <h5 style="margin-left: 10px; margin-top: 5px">
+                        The Honey Bee Suite
+                      </h5>
+                      <p style="margin-left: 10px">
+                        Suitable for 1-2 people. Up to 5 nights.
+                      </p>
+                      <h6 style="margin-left: 10px">
+                        Hotel $157/night. Select
+                        <input
+                          class="my-check"
+                          type="checkbox"
+                          id="myCheck"
+                          onclick="myFunction()"
+                        />
+                      </h6>
+                      <h6 id="text" style="display: none">Booked!</h6>
+                    </li>
+                    <li data-type="two" class="splide__slide">
+                      <img src="./assets/accom/dbl-02.jpg" alt="dbl bdrm" />
+                      <h5 style="margin-left: 10px; margin-top: 5px">
+                        Tangerine Dream
+                      </h5>
+                      <p style="margin-left: 10px">
+                        Suitable for 1-2 people. Up to 5 nights.
+                      </p>
+                      <h6 style="margin-left: 10px">
+                        Hotel $157/night. Select
+                        <input
+                          class="my-check"
+                          type="checkbox"
+                          id="myCheck"
+                          onclick="myFunction()"
+                        />
+                      </h6>
+                      <h6 id="text" style="display: none">Booked!</h6>
+                    </li>
+                    <li data-type="two" class="splide__slide">
+                      <img src="./assets/accom/dbl-03.jpg" alt="dbl bdrm" />
+                      <h5 style="margin-left: 10px; margin-top: 5px">
+                        Peach Pit
+                      </h5>
+                      <p style="margin-left: 10px">
+                        Suitable for 1-2 people. Up to 5 nights.
+                      </p>
+                      <h6 style="margin-left: 10px">
+                        Hotel $157/night. Select
+                        <input
+                          class="my-check"
+                          type="checkbox"
+                          id="myCheck"
+                          onclick="myFunction()"
+                        />
+                      </h6>
+                      <h6 id="text" style="display: none">Booked!</h6>
+                    </li>
+                    <li data-type="two" class="splide__slide">
+                      <img src="./assets/accom/dbl-04.jpg" alt="family" />
+                      <h5 style="margin-left: 10px; margin-top: 5px">
+                        Sea View
+                      </h5>
+                      <p style="margin-left: 10px">
+                        Suitable for 2-4 people. min 3 - max 10 nights.
+                      </p>
+                      <h6 style="margin-left: 10px">
+                        Hotel $90/night. Select
+                        <input
+                          class="my-check"
+                          type="checkbox"
+                          id="myCheck"
+                          onclick="myFunction()"
+                        />
+                      </h6>
+                      <h6 id="text" style="display: none">Booked!</h6>
+                    </li>
+
+                    <li data-type="one" class="splide__slide">
+                      <img src="./assets/accom/studio-01.jpg" alt="studio" />
+                      <h5 style="margin-left: 10px; margin-top: 5px">
+                        Sink Inclusive
+                      </h5>
+                      <p style="margin-left: 10px">
+                        Suitable for 1 person. Up to 10 nights.
+                      </p>
+                      <h6 style="margin-left: 10px">
+                        Hostel $30/night. Select
+                        <input
+                          class="my-check"
+                          type="checkbox"
+                          id="myCheck"
+                          onclick="myFunction()"
+                        />
+                      </h6>
+                      <h6 id="text" style="display: none">Booked!</h6>
+                    </li>
+                    <li data-type="one" class="splide__slide">
+                      <img src="./assets/accom/studio-02.jpg" alt="studio" />
+                      <h5 style="margin-left: 10px; margin-top: 5px">
+                        Rimu And You?
+                      </h5>
+                      <p style="margin-left: 10px">
+                        Suitable for 1 person. Up to 10 nights.
+                      </p>
+                      <h6 style="margin-left: 10px">
+                        Hostel $30/night. Select
+                        <input
+                          class="my-check"
+                          type="checkbox"
+                          id="myCheck"
+                          onclick="myFunction()"
+                        />
+                      </h6>
+                      <h6 id="text" style="display: none">Booked!</h6>
+                    </li>
+                    <li data-type="one" class="splide__slide">
+                      <img src="./assets/accom/studio-03.jpg" alt="studio" />
+                      <h5 style="margin-left: 10px; margin-top: 5px">
+                        Aquamarine Scene
+                      </h5>
+                      <p style="margin-left: 10px">
+                        Suitable for 1 person. Up to 10 nights.
+                      </p>
+                      <h6 style="margin-left: 10px">
+                        Hostel $30/night. Select
+                        <input
+                          class="my-check"
+                          type="checkbox"
+                          id="myCheck"
+                          onclick="myFunction()"
+                        />
+                      </h6>
+                      <h6 id="text" style="display: none">Booked!</h6>
+                    </li>
+                    <li data-type="one" class="splide__slide">
+                      <img src="./assets/accom/studio-04.jpg" alt="studio" />
+
+                      <h5 style="margin-left: 10px; margin-top: 5px">
+                        The Sunroom
+                      </h5>
+                      <p style="margin-left: 10px">
+                        Suitable for 1 person. Up to 10 nights.
+                      </p>
+                      <h6 style="margin-left: 10px">
+                        Hostel $30/night. Select
+                        <input
+                          class="my-check"
+                          type="checkbox"
+                          id="myCheck"
+                          onclick="myFunction()"
+                        />
+                      </h6>
+                      <h6 id="text" style="display: none">Booked!</h6>
+                    </li>
+                    <li data-type="one" class="splide__slide">
+                      <img src="./assets/accom/studio-05.jpg" alt="studio" />
+                      <h5 style="margin-left: 10px; margin-top: 5px">Bunkz</h5>
+                      <p style="margin-left: 10px">
+                        Suitable for 1 person. Up to 10 nights.
+                      </p>
+                      <h6 style="margin-left: 10px">
+                        Hostel $30/night. Select
+                        <input
+                          class="my-check"
+                          type="checkbox"
+                          id="myCheck"
+                          onclick="myFunction()"
+                        />
+                      </h6>
+                      <h6 id="text" style="display: none">Booked!</h6>
+                    </li>
+                    <!-- // part 1 of splide is the html -->
+                  </ul>
+                </div>
+              </div>
             </div>
+            <!-- <div class="accom-select">
+              <h6>Select_</h6>
+              <input type="checkbox" id="myCheck" onclick="myFunction()" />
+              <p id="text" style="display: none">Checkbox is CHECKED!</p>
+            </div> -->
           </div>
-          <button onclick="gotoSection('.confirm')"><h3>Submit</h3></button>
+          <!--  end of gallery card -->
+          <button onclick="gotoSection('.confirm')"><h3>Checkout</h3></button>
         </div>
         <img src="./assets/background-images/slide-3.jpg" alt="slide-3" />
       </section>
@@ -71,19 +388,43 @@
           <div class="motel-card">
             <div class="motel-details"></div>
             <div class="services-radials">
-              <p>Additional Services <br /></p>
-              <h6>Breakfast_</h6>
-              <input type="radio" />
-              <h6>Lunch_</h6>
-              <input type="radio" />
-              <h6>Dinner_</h6>
-              <input type="radio" />
+              <div><h5>Additional daily services</h5></div>
+              <div>
+                <div class="breakfast">
+                  <label for="myMeal"> <p>Breakfast $15</p> </label>
+                  <input type="checkbox" id="myMeal" onclick="myAddOn()" />
+                  <h5 id="text" style="display: none">$10</h5>
+                </div>
+
+                <div class="lunch">
+                  <label for="myMeal"> <p>Lunch $20</p> </label>
+                  <input type="checkbox" id="myMeal" onclick="myAddOn()" />
+                  <h5 id="text" style="display: none">$15</h5>
+                </div>
+
+                <div class="dinner">
+                  <label for="myMeal"> <p>Dinner $50</p> </label>
+                  <input type="checkbox" id="myMeal" onclick="myAddOn()" />
+                  <h5 id="text" style="display: none">$50</h5>
+                </div>
+              </div>
             </div>
-            <div class="cost">
-              <h6>
-                <br />
-                List items; & cost. Running total NZ$
-              </h6>
+            <div class="bill">
+              <h5>Your Bill</h5>
+              <div class="breakdown">
+                <h6>Kiwi Batch</h6>
+                <h6>$240/night</h6>
+                <h6>@4 nights</h6>
+                <h6 style="text-align: right">NZ$ 940.00</h6>
+
+                <h6>Breakfast</h6>
+                <h6>$15/day</h6>
+                <h6>@4 days</h6>
+                <h6 style="text-align: right">NZ$ 60.00</h6>
+              </div>
+              <div class="total-bill">
+                <h5 style="text-align: right">Total: NZ$1,000.00</h5>
+              </div>
             </div>
           </div>
           <button onclick="gotoSection('.pay')"><h3>Confirm</h3></button>
@@ -92,9 +433,63 @@
       </section>
       <section class="app-section pay">
         <div class="pay-content">
-          <h2>Payment details</h2>
-          <div class="payment-form"></div>
-          <button onclick="gotoSection('.landing')"><h3>Pay</h3></button>
+          <div class="payment-form">
+            <h2>Payment details</h2>
+            <div class="fields">
+              <input
+                onblur="checkFullName(event)"
+                type="text"
+                placeholder="full name"
+              />
+
+              <input
+                onblur="checkEmail(event)"
+                type="text"
+                placeholder="email"
+              />
+
+              <input
+                onblur="checkContactNum(event)"
+                type="text"
+                placeholder="contact number"
+              />
+
+              <img
+                style="width: 200px; margin: 0 auto"
+                src="./assets/images/payments.png"
+                alt="payment-types"
+              />
+
+              <input
+                onblur="checkCardName(event)"
+                type="text"
+                placeholder="name on card"
+              />
+
+              <input
+                onblur="checkCardNum(event)"
+                type="text"
+                placeholder="card number"
+              />
+
+              <input
+                style="width: 50%"
+                onblur="checkCardExp(event)"
+                type="text"
+                placeholder="expiry"
+              />
+
+              <input
+                style="width: 30%; align-self: flex-end; margin-top: -37px"
+                onblur="checkCardCCV(event)"
+                type="text"
+                placeholder="CCV"
+              />
+            </div>
+            <button class="disabled" onclick="gotoSection('.landing')">
+              <h3>Pay</h3>
+            </button>
+          </div>
         </div>
         <img src="./assets/background-images/slide-5.jpg" alt="slide-5" />
       </section>
@@ -102,5 +497,8 @@
     <footer></footer>
     <script src="./js/sections.js"></script>
     <script src="./js/calendar.js"></script>
+    <script src="./js/accomSlider.js"></script>
+    <script src="./js/calculator.js"></script>
+    <script src="./js/payment.js"></script>
   </body>
 </html>
