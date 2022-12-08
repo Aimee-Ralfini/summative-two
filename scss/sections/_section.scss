@@ -8,7 +8,7 @@
     margin:0 auto;
     width: 400px;
     height: 730px;
-    // overflow-x: hidden; 
+    overflow-x: hidden; 
         //– unhide overflow-x to display working app.
     display: flex;
 
@@ -16,8 +16,18 @@
     .landing{
             position: relative;  
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;   
+            
+            .welcome{
+                position: absolute;
+                top: 94px;
+                left:20px;
+                width: 362px;
+                margin: 0 auto;
+            }
     }
+
+ 
 
     .dates{
         position: relative;  
@@ -48,7 +58,7 @@
     }   
 
     button{
-        top:30%;
+        top:37%;
         left: 30%;
     }
 

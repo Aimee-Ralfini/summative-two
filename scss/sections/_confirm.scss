@@ -15,7 +15,7 @@
     }
 
     button{
-    top:55%;
+    top:56%;
     left:57%;
     }
 
@@ -26,21 +26,22 @@
                 flex-direction: column;
                 justify-content: space-between;
                 width: 358px;
-                height: 312px;
+                height: 320px;
                 align-self: center;
                 top: 110px;
 
 
                 .motel-details{
-                    height:80%;
-                    // background-color: col.$yellow;
+                display: grid;   
+                grid-template-columns: 1fr 1fr;
+                padding:10px;
                 }
 
                 .services-radials{
                     display:flex;
                     flex-direction:column;
                     justify-content: space-evenly;
-                    background-color: col.$shell;
+                    background-color: col.$white;
                     padding: 8px;
                     height:auto;
                    
@@ -70,7 +71,7 @@
                 justify-content: space-between;   
                 padding:8px;
                 height: 200px;   
-                background-color: col.$white;
+                // background-color: col.$white;
                 // list-style-type: none;
             
                 .breakdown{
